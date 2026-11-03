@@ -1,0 +1,4 @@
+project_id = "khuta-smart-horse-monitor"
+
+[functions.ingest-reading]
+verify_jwt = true

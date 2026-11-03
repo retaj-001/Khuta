@@ -1,0 +1,4 @@
+-- Apply only after replacing the two placeholders locally. Never commit a real
+-- device secret. The stored value is SHA-256, not the plaintext device key.
+-- insert into public.devices (device_name, device_type, device_key, secret_hash)
+-- values ('Khuta ESP32', 'ESP32 Dev Module', 'khuta-esp32', encode(digest('REPLACE_DEVICE_SECRET', 'sha256'), 'hex'));
